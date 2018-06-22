@@ -4,9 +4,152 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e30be87bdcc91614061c6b395d18c11c",
-    "content-hash": "ca8cdb875dc7f615c1f49f539093275f",
+    "content-hash": "b75fbceec25e3c6453cf2e3687fd310c",
     "packages": [
+        {
+            "name": "anahkiasen/underscore-php",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/underscore-php.git",
+                "reference": "48f97b295c82d99c1fe10d8b0684c43f051b5580"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Anahkiasen/underscore-php/zipball/48f97b295c82d99c1fe10d8b0684c43f051b5580",
+                "reference": "48f97b295c82d99c1fe10d8b0684c43f051b5580",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.0",
+                "patchwork/utf8": "^1.2",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "2.0.*@dev",
+                "phpunit/phpunit": "^4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Underscore\\": [
+                        "src",
+                        "tests"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A redacted port of Underscore.js for PHP",
+            "keywords": [
+                "internals",
+                "laravel",
+                "toolkit"
+            ],
+            "time": "2015-05-16T19:24:58+00:00"
+        },
+        {
+            "name": "bower-asset/gentelella",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/puikinsh/gentelella.git",
+                "reference": "3448fdfdf16a41707d6e2a8154d592a88d85c41c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/puikinsh/gentelella/zipball/3448fdfdf16a41707d6e2a8154d592a88d85c41c",
+                "reference": "3448fdfdf16a41707d6e2a8154d592a88d85c41c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "bower-asset/animate.css": ">=3.5.1,<4.0.0",
+                "bower-asset/autosize": ">=3.0.15,<4.0.0",
+                "bower-asset/bootstrap": ">=3.3.7,<4.0.0",
+                "bower-asset/bootstrap-colorpicker": ">=2.3.3,<3.0.0",
+                "bower-asset/bootstrap-daterangepicker": "dev-master",
+                "bower-asset/bootstrap-progressbar": ">=0.9.0,<0.10.0",
+                "bower-asset/bootstrap-wysiwyg-steveathon": ">=1.0.5,<2.0.0",
+                "bower-asset/chart.js": ">=2.0.2,<3.0.0",
+                "bower-asset/cropper": ">=2.3.0,<3.0.0",
+                "bower-asset/datatables.net": ">=1.10.11,<2.0.0",
+                "bower-asset/datatables.net-bs": ">=1.10.11,<2.0.0",
+                "bower-asset/datatables.net-buttons": ">=1.1.2,<2.0.0",
+                "bower-asset/datatables.net-buttons-bs": ">=1.1.2,<2.0.0",
+                "bower-asset/datatables.net-fixedheader": ">=3.1.1,<4.0.0",
+                "bower-asset/datatables.net-fixedheader-bs": ">=3.1.1,<4.0.0",
+                "bower-asset/datatables.net-keytable": ">=2.1.1,<3.0.0",
+                "bower-asset/datatables.net-responsive": ">=2.0.2,<3.0.0",
+                "bower-asset/datatables.net-responsive-bs": ">=2.0.2,<3.0.0",
+                "bower-asset/datatables.net-scroller": ">=1.4.1,<2.0.0",
+                "bower-asset/datatables.net-scroller-bs": ">=1.4.1,<2.0.0",
+                "bower-asset/datejs": ">=1.0.0-RC3,<2.0.0",
+                "bower-asset/devbridge-autocomplete": ">=1.2.24,<2.0.0",
+                "bower-asset/dropzone": ">=4.3.0,<5.0.0",
+                "bower-asset/echarts": ">=3.1.7,<4.0.0",
+                "bower-asset/fastclick": ">=1.0.6,<2.0.0",
+                "bower-asset/flot": ">=0.8.3,<0.9.0",
+                "bower-asset/flot-spline": ">=0.8.2,<0.9.0",
+                "bower-asset/flot.curvedlines": ">=1.1.1,<2.0.0",
+                "bower-asset/flot.orderbars": "*",
+                "bower-asset/fontawesome": ">=4.6.1,<5.0.0",
+                "bower-asset/fullcalendar": ">=2.6.1,<3.0.0",
+                "bower-asset/gauge.js": ">=1.2.1,<2.0.0",
+                "bower-asset/icheck": ">=1.0.2,<2.0.0",
+                "bower-asset/ionrangeslider": ">=2.1.3,<3.0.0",
+                "bower-asset/jquery": ">=2.2.3,<3.0.0",
+                "bower-asset/jquery-knob": ">=1.2.13,<2.0.0",
+                "bower-asset/jquery-smart-wizard": ">=3.3.1,<4.0.0",
+                "bower-asset/jquery-sparkline": ">=2.1.3,<3.0.0",
+                "bower-asset/jquery.easy-pie-chart": ">=2.1.6,<3.0.0",
+                "bower-asset/jquery.inputmask": ">=3.3.1,<4.0.0",
+                "bower-asset/jquery.tagsinput": ">=1.3.6,<2.0.0",
+                "bower-asset/jqvmap": "dev-master",
+                "bower-asset/jszip": "2.6.0",
+                "bower-asset/malihu-custom-scrollbar-plugin": ">=3.1.3,<4.0.0",
+                "bower-asset/morris.js": ">=0.5.1,<0.6.0",
+                "bower-asset/normalize-css": ">=4.1.1,<5.0.0",
+                "bower-asset/nprogress": ">=0.2.0,<0.3.0",
+                "bower-asset/parsleyjs": ">=2.3.10,<3.0.0",
+                "bower-asset/pdfmake": ">=0.1.20,<0.2.0",
+                "bower-asset/pnotify": ">=3.0.0,<4.0.0",
+                "bower-asset/select2": ">=4.0.2,<5.0.0",
+                "bower-asset/skycons": "*",
+                "bower-asset/starrr": ">=2.0.0,<3.0.0",
+                "bower-asset/switchery": ">=0.8.1,<0.9.0",
+                "bower-asset/validator": ">=1.0.6,<2.0.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "documentation"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Gentelella Admin is a free to use Bootstrap admin template",
+            "keywords": [
+                "admin",
+                "backend",
+                "bootstrap",
+                "css",
+                "html",
+                "js",
+                "responsive",
+                "template",
+                "theme"
+            ]
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -39,6 +182,73 @@
             ],
             "description": "implementation of xdg base directory specification for php",
             "time": "2014-10-24 07:27:01"
+        },
+        {
+            "name": "doctrine/inflector",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/inflector.git",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Inflector\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Common String Manipulations with regard to casing and singular/plural rules.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "inflection",
+                "pluralize",
+                "singularize",
+                "string"
+            ],
+            "time": "2015-11-06T14:35:42+00:00"
         },
         {
             "name": "enyo/dropzone",
@@ -735,6 +945,84 @@
             "time": "2017-08-04 16:41:06"
         },
         {
+            "name": "moneyphp/money",
+            "version": "v3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moneyphp/money.git",
+                "reference": "2bd76fb0ba281bd90150a747bb7a8415c7e241f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/2bd76fb0ba281bd90150a747bb7a8415c7e241f3",
+                "reference": "2bd76fb0ba281bd90150a747bb7a8415c7e241f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "cache/taggable-cache": "^0.4.0",
+                "ext-bcmath": "*",
+                "ext-gmp": "*",
+                "ext-intl": "*",
+                "florianv/swap": "^3.0",
+                "henrikbjorn/phpspec-code-coverage": "^2.0.2",
+                "moneyphp/iso-currencies": "^3.0",
+                "php-http/message": "^1.4",
+                "php-http/mock-client": "^0.3.3",
+                "phpspec/phpspec": "^2.5",
+                "phpunit/phpunit": "^4.5",
+                "psr/cache": "^1.0",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.1"
+            },
+            "suggest": {
+                "ext-bcmath": "Calculate without integer limits",
+                "ext-gmp": "Calculate without integer limits",
+                "ext-intl": "Format Money objects with intl",
+                "florianv/swap": "Exchange rates library for PHP",
+                "psr/cache-implementation": "Used for Currency caching"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Money\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathias Verraes",
+                    "email": "mathias@verraes.net",
+                    "homepage": "http://verraes.net"
+                },
+                {
+                    "name": "Frederik Bosch",
+                    "email": "f.bosch@genkgo.nl"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagi-kazar@gmail.com"
+                }
+            ],
+            "description": "PHP implementation of Fowler's Money pattern",
+            "homepage": "http://verraes.net/2011/04/fowler-money-pattern-in-php/",
+            "keywords": [
+                "Value Object",
+                "money",
+                "vo"
+            ],
+            "time": "2017-04-26T12:54:44+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v3.0.4",
             "source": {
@@ -784,6 +1072,106 @@
                 "php"
             ],
             "time": "2017-02-10 20:20:03"
+        },
+        {
+            "name": "nnnick/chartjs",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chartjs/Chart.js.git",
+                "reference": "c867d3f728d595eafc017f4d4136128824d1db25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chartjs/Chart.js/zipball/c867d3f728d595eafc017f4d4136128824d1db25",
+                "reference": "c867d3f728d595eafc017f4d4136128824d1db25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "release/2.0": "v2.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NICK DOWNIE",
+                    "email": "hello@nickdownie.com"
+                }
+            ],
+            "description": "Simple HTML5 charts using the canvas element.",
+            "homepage": "http://www.chartjs.org/",
+            "keywords": [
+                "JS",
+                "chart"
+            ],
+            "time": "2017-02-08T20:25:55+00:00"
+        },
+        {
+            "name": "patchwork/utf8",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "30ec6451aec7d2536f0af8fe535f70c764f2c47a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/30ec6451aec7d2536f0af8fe535f70c764f2c47a",
+                "reference": "30ec6451aec7d2536f0af8fe535f70c764f2c47a",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=7.3",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance",
+                "ext-wfio": "Use WFIO for UTF-8 filesystem access on Windows"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Patchwork\\": "src/Patchwork/"
+                },
+                "classmap": [
+                    "src/Normalizer.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+            "homepage": "https://github.com/tchwork/utf8",
+            "keywords": [
+                "grapheme",
+                "i18n",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2016-05-18T13:57:10+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",

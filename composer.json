@@ -10,6 +10,8 @@
         "ifsnop/mysqldump-php": "dev-master",
         "memio/memio": "^1.0",
         "psy/psysh": "@stable",
+        "anahkiasen/underscore-php": "^2.0",
+        "moneyphp/money": "^3.0",
         "enyo/dropzone": "@stable",
         "ezyang/htmlpurifier": "^4.9",
         "moneyphp/money": "^3.0"
@@ -28,7 +30,8 @@
         },
         "psr-0": {
             "": "modules/"
-        }
+        },
+        "classmap": ["libs/quickform"]
     },
     "require-dev": {
         "codeception/codeception": "*",

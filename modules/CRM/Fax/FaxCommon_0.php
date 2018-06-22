@@ -19,7 +19,6 @@ class CRM_FaxCommon extends ModuleCommon {
 	public static function fax_file($f,$oryg) {
 		$tmp = self::Instance()->get_data_dir().$oryg;
 		copy($f,$tmp);
-
 		Base_BoxCommon::push_module(CRM_Fax::module_name(),'send',$tmp);
 	}
 	
