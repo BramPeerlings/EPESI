@@ -25,7 +25,7 @@ class Utils_LeightboxPrompt extends Module {
 		return $this->group;
 	}
 
-    public function add_option($key, $label, $icon, $form=null, $tooltip=null) {
+    public function add_option($key, $label, $icon, $form=null) {
     	$key = $key?: 'default';
 
         $this->options[$key] = array('icon'=>$icon, 'form'=>$form, 'label'=>$label);
@@ -68,7 +68,6 @@ class Utils_LeightboxPrompt extends Module {
                     foreach ($params_list as $param_key)
                         $form->addElement('hidden', $this->group.'_'.$param_key, 'none');
                 }
-                $tooltip = $this->button_tooltip_attrs($next_button);
                 if ($option['form']!==null) {
                     $option['form']->addElement('button', 'cancel', __('Cancel'), array('id'=>$this->group.'_lp_cancel', 'onclick'=>$this->get_close_leightbox_href_js(!$single_option)));
                     $option['form']->addElement('submit', 'submit', __('OK'), array('id'=>$this->group.'_lp_submit', 'onclick'=>$this->get_close_leightbox_href_js()));
@@ -78,9 +77,9 @@ class Utils_LeightboxPrompt extends Module {
                     $th->assign('id', $this->get_instance_id());
                     $th->display('form');
                     $form_contents = ob_get_clean();
-                    
-                    $next_button['open'] = '<a ' . $this->get_form_show_href($option_key) . ' ' . $tooltip . '>';
+                    $next_button['open'] = '<a ' . $this->get_form_show_href($option_key) .'>';
                     $sections[] = '<div id="'.$this->group.'_'.$option_key.'_form_section" class="'.$this->group.'_form_section" style="display:none;">'.$form_contents.'</div>';
+
                     if ($this->selected_option ===  $option_key)
                     	$active_option = $option_key; // open this selection if selected_option set
 
@@ -88,7 +87,7 @@ class Utils_LeightboxPrompt extends Module {
 						$active_option = $option_key; // open this selection if form submitted but not valid
 
                 } else {
-                    $next_button['open'] = '<a href="javascript:void(0);" onmouseup="' . $this->get_close_leightbox_href_js() . $form->get_submit_form_js() . ';" ' . $tooltip . '>';
+                    $next_button['open'] = '<a href="javascript:void(0);" onmouseup="' . $this->get_close_leightbox_href_js() . $form->get_submit_form_js() . ';">';
                     $form->display();
                 }
                 $next_button['close'] = '</a>';
@@ -116,6 +115,7 @@ class Utils_LeightboxPrompt extends Module {
             Libs_LeightboxCommon::display($this->group.'_prompt_leightbox', $profiles_out, $header, $big);
         }
     }
+
     private function get_single_option() {
     	if (count($this->options) == 1) {
 	    	$option_keys = array_keys($this->options);
